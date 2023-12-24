@@ -1,0 +1,106 @@
+body {
+    background-image: url(closeup-monochrome-shot-rose-growing-garden.png);
+    background-size: cover;
+    width: 100%;
+    height: auto; 
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 10px;
+    margin: 25px 25px 25px 25px;
+    }
+    
+    .div1 {
+         grid-area: 1 / 1 / 4 / 2;
+         justify-items: end;
+    }
+         
+     img {
+        border: 10px solid #FFAFCC;
+     }    
+    
+    .div2 { 
+        grid-area: 1 / 2 / 2 / 4;
+        font-family: "Windsong", cursive;
+        font-size:large;
+        color:#FFAFCC;
+     }
+
+     h1 {
+        text-align: center;
+     }
+    p {
+        font-family: "Nanum Gothic", sans-serif;
+        text-align: center;
+
+    }
+    
+    .div3 { 
+        grid-area: 2 / 2 / 4 / 4;
+        text-align: center;
+        font-family: "Windsong", script;
+        font-size: 32px;
+        color: #FFAFCC;
+        text-align: center;
+        
+     }
+    .div4 { 
+        grid-area: 1 / 4 / 4 / 5;
+        align-items: center;
+        margin-top: 25px;
+    
+    }
+    .icon {
+        border: 5px solid #FFAFCC
+        
+    }
+    .div5 {
+        grid-area: 4 / 1 / 5 / 5; 
+        padding-left: 15px;
+        overflow: hidden;
+    }
+        #scroll-text {
+        font-family: "Parisienne", script;
+        font-size: 32px;
+        color: #FFB5A7;
+        letter-spacing: 1px;
+        font-weight: 200;
+        /* animation properties */
+        /* -moz-transform is for rendering in Mozilla (firefox) -webkit- is for rendering in Chrome safari and others */
+  
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        -moz-animation: my animation 50s linear infinite;
+        -webkit-animation: my-animation 50s linear infinite;
+        animation: my-animation 50s linear infinite;
+        }
+  
+        /* for Firefox */
+        @-moz-keyframes my-animation {
+            from { -moz-transform: translateX(100%); }
+            to { -mos-transform: translateX(-100%); }
+        }
+        /* for Chrome */
+        @-webkit-keyframes my-animation {
+            from { -webkit-transform: translateC(100%); }
+        }
+        @keyframes my-animation {
+            from {
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            }
+            to {
+            -moz-transform: translateX(-100%);
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+            }
+        }
+
+            
